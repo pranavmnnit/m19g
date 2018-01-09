@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title> Multiply Magik </title>
+</head>
+<body>
+	<textarea id="output_area" style="width:100%; height:50%"></textarea>
+	<script type="text/javascript">
+		function output(text) {
+			document.getElementById("output_area").append(text + "\n\n");
+		}
+		var Module = {
+			'print': function (text) {
+				output("print\n" + text);
+			},
+			'printErr': function (text) {
+				output("printErr\n" + text);
+			}
+		};
+	</script>
+	<script type="text/javascript" src="middle-layer.js"></script>
+	<script type="text/javascript" src="multiply.js"></script>
+	<button style="width:100%; height:50%" onclick="getClickCoords(event)">CLICK ME!</button>
+</body>
