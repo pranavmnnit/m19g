@@ -8,7 +8,7 @@ extern "C" {
 		// call js method
 		double multiply_result = EM_ASM_({
 										return multiply_js($0, $1);
-								 }, x, y);
+										}, x, y);
 		return multiply_result;
 	}
 }
