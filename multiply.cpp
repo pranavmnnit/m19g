@@ -1,6 +1,7 @@
 #include<iostream>
 #include <emscripten.h>
 
+
 extern "C" {
 	extern void multiply_js(double x, double y);
 
